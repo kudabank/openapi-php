@@ -1,0 +1,30 @@
+{
+    "name": "Kuda/kuda-encyption",
+    "description": "Description here.",
+    "authors": [
+        {
+            "name": "Kuda",
+            "email": "test@example.com"
+        }
+    ],
+    "license": "MIT",
+    "require": {
+        "laravel/framework": "~6.0.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "Kuda\\KudaEncyption\\": "src/"
+        }
+    },
+    "minimum-stability": "stable",
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Kuda\\KudaEncyption\\KudaEncyptionServiceProvider"
+            ],
+            "aliases": {
+                "KudaEncyption": "Kuda\\KudaEncyption\\Facades\\KudaEncyption"
+            }
+        }
+    }
+}
